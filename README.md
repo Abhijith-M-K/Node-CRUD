@@ -9,32 +9,53 @@ ________________________________________
 Adding a camera file:
 
 router post
-Url for adding a file: http://localhost:3000/add-camera
+Url for adding a file:
+```http
+POST  http://localhost:3000/add-camera
+```
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `name` | `string` | **Required**|
+| `desc` | `string` | **Required**|
+| `url` | `string` | **Required**|
+| `modelName` | `string` | **Required**|
 
 ________________________________________
 Get all camera files
 
 router get
-Get all file : http://localhost:3000/get-camera
+Get all file : 
+```http
+GET  http://localhost:3000/get-camera
+```
 ________________________________________
 
 Get a camera file
 
 router get
-Get a file : http://localhost:3000/get-camera/:id
-
+Get a file : 
+```http
+GET http://localhost:3000/get-camera/:id
+```
 _______________________________________
 
 Update a file
 
 router put
-Update a file :http://localhost:3000/get-camera/:id
+Update a file :
+```http
+PUT http://localhost:3000/get-camera/:id
+```
+
 _______________________________________
 
 Remove a camera file
 router delete
 
-Remove a file : http://localhost:3000/remove-camera/:id
+Remove a file : 
+```http
+DELETE http://localhost:3000/remove-camera/:id
+```
 
 
 
@@ -44,30 +65,52 @@ ________________________________________
 Adding a Network file:
 
 router post
-Url for adding a file: http://localhost:3000/add-network
+Url for adding a file: 
+```http
+POST http://localhost:3000/add-network
+```
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `name` | `string` | **Required**|
+| `desc` | `string` | **Required**|
+| `cameras` | `string` | **Required**|
+
+
 
 ________________________________________
 Get all Network files
 
 router get
-Get all file : http://localhost:3000/cameraNetworks
+Get all file : 
+```http
+GET http://localhost:3000/cameraNetworks
+```
 ________________________________________
 
 Get a Network file
 
 router get
-Get a file : http://localhost:3000/cameraNetworks/:id
+Get a file : 
+```http
+GET http://localhost:3000/cameraNetworks/:id
+```
 
 _______________________________________
 
 Update a file
 
 router put
-Update a file :http://localhost:3000/cameraNetworks/:id
+Update a file :
+```http
+PUT http://localhost:3000/cameraNetworks/:id
+```
 _______________________________________
 
 Remove a Network file
 router delete
 
-Remove a file : http://localhost:3000/remove-network/:id
-
+Remove a file : 
+```http
+DELETE http://localhost:3000/remove-network/:id
+```
